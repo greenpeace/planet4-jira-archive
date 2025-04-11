@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Greenpeace Planet 4 Jira archive</title>
+  <meta name="description" content="Greenpeace Planet 4 Jira archive">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://greenpeace.github.io/planet4-jira-archive/">
+  <meta property="og:description" content="Greenpeace Planet 4 Jira archive">
+  <meta property="og:image" content="https://greenpeace.github.io/planet4-test-swarm/planet4.png">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="100">
+  <meta property="og:site_name" content="Greenpeace Planet 4 Jira archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+  <link rel='stylesheet' href='static/style.css' type='text/css' media='all'>
+  <base href="https://greenpeace.github.io/planet4-jira-archive/">
+  <!-- Use this line below instead when doing local development -->
+  <!--<base href="/">-->
+</head>
+
+<body>
+  <div class="page-wrap">
+    <header>
+      <a href=""><img src="static/logo.png" alt="Planet 4 Jira Archive" class="logo"></a>
+    </header>
+
+    <div id="msg"></div>
+
+    <div id="loading">
+      <div class="three-quarters" id="spinner-people">loading...</div>
+    </div>
+
+    <div class="home" id="home">
+      <input type="text" class="filter" id="filter" placeholder="Filter items..." />
+
+      <ul id="item-list"></ul>
+    </div>
+
+    <div class="ticket" id="ticket">
+
+      <h1 class="title">
+        <a href="">home</a> /
+        <img src="static/tag.svg" alt="ticket" title="ticket">
+        <span id="issue-key"></span>
+        <span class="value" id="summary"></span>
+      </h1>
+
+      <div class="grid">
+
+        <div class="item">
+          <div class="row">
+            <div class="label">Issue Type:</div>
+            <div class="value" id="issuetype"></div>
+          </div>
+          <div class="row">
+            <div class="label">Created:</div>
+            <div class="value" id="created"></div>
+          </div>
+          <div class="row">
+            <div class="label">Updated:</div>
+            <div class="value" id="updated"></div>
+          </div>
+          <div class="row">
+            <div class="label">Status:</div>
+            <div class="value" id="status"></div>
+          </div>
+          <div class="row">
+            <div class="label">Reporter:</div>
+            <div class="value" id="reporter"></div>
+          </div>
+          <div class="row">
+            <div class="label">Assignee:</div>
+            <div class="value" id="assignee"></div>
+          </div>
+          <div class="row">
+            <div class="label">Labels:</div>
+            <div class="value" id="labels"></div>
+          </div>
+          <div class="row">
+            <div class="label">Sections:</div>
+            <div class="value" id="sections"></div>
+          </div>
+          <div class="row">
+            <div class="label">Sprints:</div>
+            <div class="value" id="sprints"></div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="label">Description:</div>
+          <div class="value" id="description"></div>
+        </div>
+
+        <div class="item">
+          <div class="label">Attachments:</div>
+          <div class="value" id="attachments"></div>
+        </div>
+
+        <div class="item">
+          <div class="label">Comments:</div>
+          <div id="comments"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="note" id="note">
+      <div class="links">
+        <div><a href="https://github.com/greenpeace/planet4-jira-archive" target="_blank">Source Code</a></div>
+      </div>
+    </div>
+
+    <footer>
+    </footer>
+  </div>
+
+  <script src="static/app.js"></script>
+
+</body>
+</html>
